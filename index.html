@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="code-editor-container">
+        <div class="code-editor html-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="./asset/html.png" alt="HTML" width="25px">
+                    <span>HTML</span>
+
+                </div>
+                <div class="right-head">
+                    <img src="copy.svg" alt="" class="copy 1copy">
+
+                </div>
+            </div>
+            <textarea class="html-input" spellcheck="false"></textarea>
+
+        </div>
+        <div class="code-editor css-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="./asset/css.png" alt="css" width="30px">
+                    <span>CSS</span>
+
+                </div>
+                <div class="right-head">
+                    <img src="copy.svg" alt="" class="copy copy2">
+
+                </div>
+
+            </div>
+            <textarea class="css-input" spellcheck="false"></textarea>
+
+        </div>
+        <div class="code-editor js-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="./asset/js.png" alt="JS" width="30px">
+                    <span>JS</span>
+
+                </div>
+                <div class="right-head">
+                    <img src="copy.svg" alt="" class="copy copy3">
+
+                </div>
+
+            </div>
+            <textarea class="js-input" spellcheck="false"></textarea>
+
+        </div>
+
+    </div>
+    <div class="output-container">
+        <div class="output-head">
+            
+            <span>OUTPUT</span>
+            <img id="save" src="save.svg" alt="">
+            <img id="full" src="full.svg" alt="">
+            
+        </div>
+        <iframe id="output"></iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
